@@ -99,20 +99,155 @@ export default function Home() {
           <h2 className="section-title">Skills</h2>
           <div className="space-y-3">
             <div className="skill-item">
-              <span className="skill-name">Skill 1</span>
+              <span className="skill-name">Artificial Neural Networks</span>
               <div className="skill-bar bg-gray-200 rounded-full h-2.5">
                 <div
                   className="skill-level bg-blue-600 h-2.5 rounded-full"
-                  style={{ width: "70%" }}
+                  style={{ width: "85%" }}
                 ></div>
               </div>
             </div>
             <div className="skill-item">
-              <span className="skill-name">Skill 2</span>
+              <span className="skill-name">AWS Cloud Computing</span>
               <div className="skill-bar bg-gray-200 rounded-full h-2.5">
                 <div
                   className="skill-level bg-blue-600 h-2.5 rounded-full"
-                  style={{ width: "75%" }}
+                  style={{ width: "78%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Docker</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "82%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Express.js</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "89%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">FastAPI</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "83%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Git</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "91%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">LangChain</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "79%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Machine Learning</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "87%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Natural Language Processing</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "84%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Next.js</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "92%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Prompt Engineering</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "88%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Python</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "94%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">React Testing Library</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "81%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">React.js</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "93%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Scrum</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "77%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Tailwind CSS</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "95%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">TypeScript</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "90%" }}
                 ></div>
               </div>
             </div>
