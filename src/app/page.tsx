@@ -1,103 +1,193 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="font-sans bg-white text-black p-8">
+      <div className="max-w-4xl mx-auto">
+        <header className="mb-6 text-center">
+          <h1 className="text-3xl font-bold">
+            Gabriel Cavalcante De Jesus Oliveira
+          </h1>
+          <p className="text-sm">Várzea Nova, Bahia, Brazil</p>
+          <p className="text-sm">
+            +55 (74) 98134-3312 | gabriel.lcifba@gmail.com
+          </p>
+          <p className="text-sm">
+            <a
+              href="https://www.linkedin.com/in/zolppy"
+              className="text-blue-600 hover:underline"
+            >
+              https://www.linkedin.com/in/zolppy
+            </a>
+            |
+            <a
+              href="https://github.com/zolppy"
+              className="text-blue-600 hover:underline"
+            >
+              https://github.com/zolppy
+            </a>
+          </p>
+        </header>
+        <section className="mb-6">
+          <h2 className="section-title">Objetive</h2>
+          <p>
+            I seek to acquire even more experience and knowledge to become an
+            even better and more versatile professional.
+          </p>
+        </section>
+        <section className="mb-6">
+          <h2 className="section-title">Experiences</h2>
+          <div className="mb-4">
+            <h3 className="job-title">Desenvolvedor Frontend</h3>
+            <p className="company-name">Eruda</p>
+            <p className="date-range">Oct 2023 - Apr 2025</p>
+            <p className="list-item list-none">
+              Development and maintenance of modern, fluid, accessible, dynamic,
+              performant and responsive user interfaces, using cutting-edge
+              technologies and following high-fidelity models.
+            </p>
+          </div>
+          <div className="mb-4">
+            <h3 className="job-title">
+              Artificial Intelligence and Machine Learning Intern
+            </h3>
+            <p className="company-name">Compass UOL</p>
+            <p className="date-range">Oct 2024 - Mar 2025</p>
+            <p className="list-item list-none">
+              Extensive learning path covering several theoretical topics
+              relevant to the area of Artificial Intelligence (e.g. Natural
+              Language Processing, Artificial Neural Networks, Deep Learning)
+              and AWS Cloud Computing, with real and practical projects.
+              Artificial Intelligence models have been implemented for various
+              purposes, such as chatbots and optical character recognition.
+            </p>
+          </div>
+          <div className="mb-4">
+            <h3 className="job-title">Technical Support and Integration</h3>
+            <p className="company-name">Infotec Automação e Tecnologia</p>
+            <p className="date-range">Nov 2022 - Apr 2023</p>
+            <p className="list-item list-none">
+              Assembly, maintenance and configuration of computers and
+              peripherals and integration between systems, including network and
+              database configuration.
+            </p>
+          </div>
+          <div>
+            <h3 className="job-title">
+              Programa Institucional de Bolsas de Iniciação Científica
+            </h3>
+            <p className="company-name">
+              Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
+            </p>
+            <p className="date-range">Nov 2020 - May 2022</p>
+            <p className="list-item list-none">
+              Preparation of lesson plans, teaching materials, pedagogical
+              resources and other activities related to teaching, in addition to
+              teaching workshops in the area of Computer Science.
+            </p>
+          </div>
+        </section>
+        <section className="mb-6">
+          <h2 className="section-title">Academic Background</h2>
+          <div>
+            <h3 className="job-title">Computer Science</h3>
+            <p className="company-name">
+              Instituto Federal de Educação, Ciência e Tecnologia da Bahia
+            </p>
+            <p className="date-range">2019 - Now</p>
+          </div>
+        </section>
+        <section className="mb-6">
+          <h2 className="section-title">Skills</h2>
+          <div className="space-y-3">
+            <div className="skill-item">
+              <span className="skill-name">Skill 1</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "70%" }}
+                ></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <span className="skill-name">Skill 2</span>
+              <div className="skill-bar bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="skill-level bg-blue-600 h-2.5 rounded-full"
+                  style={{ width: "75%" }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="mb-6">
+          <h2 className="section-title">Projects</h2>
+          <ul className="list-disc pl-5">
+            <li className="list-item">
+              <a
+                href="https://br-architects-zol.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://br-architects-zol.vercel.app
+              </a>
+            </li>
+            <li className="list-item">
+              <a
+                href="https://fashion-blog-zol.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://fashion-blog-zol.vercel.app
+              </a>
+            </li>
+            <li className="list-item">
+              <a
+                href="https://interior-design-zol.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://interior-design-zol.vercel.app
+              </a>
+            </li>
+            <li className="list-item">
+              <a
+                href="https://thin-crust-pizza.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://thin-crust-pizza.vercel.app
+              </a>
+            </li>
+            <li className="list-item">
+              <a
+                href="https://travel-agency-zol.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://travel-agency-zol.vercel.app
+              </a>
+            </li>
+            <li className="list-item">
+              <a
+                href="https://wizard-register.vercel.app"
+                className="text-blue-600 hover:underline"
+              >
+                https://wizard-register.vercel.app
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section className="mb-6">
+          <h2 className="section-title">Achievements</h2>
+          <ul className="list-disc pl-5">
+            <li className="list-item">Gen Al Technical Certified</li>
+            <li className="list-item">Al-Assisted Certified Professional</li>
+            <li className="list-item">
+              Agile-Certified Fast Inception with Al Cockpit
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 className="section-title">Languages</h2>
+          <ul className="list-disc pl-5">
+            <li className="list-item">English (advanced)</li>
+          </ul>
+        </section>
+      </div>
     </div>
   );
 }
