@@ -2,12 +2,15 @@ import { H2 } from "@/app/components/H2";
 import { Experience } from "@/app/components/Experience";
 import { Skill } from "@/app/components/Skill";
 import { Project } from "@/app/components/Project";
+import { Achievement } from "@/app/components/Achievement";
 import { experiences } from "@/utils/data/experiences";
 import { skills } from "@/utils/data/skills";
 import { projects } from "@/utils/data/projects";
+import { achievements } from "@/utils/data/achievements";
 import { Experience as ExperienceType } from "@/utils/types/experience";
 import { Skill as SkillType } from "@/utils/types/skill";
 import { Project as ProjectType } from "@/utils/types/project";
+import { Achievement as AchievementType } from "@/utils/types/achievement";
 
 export default function Home() {
   return (
@@ -87,11 +90,9 @@ export default function Home() {
         <section className="mb-6">
           <H2>Achievements</H2>
           <ul className="list-disc pl-5">
-            <li className="mb-1">Gen Al Technical Certified</li>
-            <li className="mb-1">Al-Assisted Certified Professional</li>
-            <li className="mb-1">
-              Agile-Certified Fast Inception with Al Cockpit
-            </li>
+            {achievements.map(({ id, title }: AchievementType) => (
+              <Achievement key={id} title={title} />
+            ))}
           </ul>
         </section>
         <section>
