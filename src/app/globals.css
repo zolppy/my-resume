@@ -12,12 +12,6 @@
 .list-item {
   @apply mb-1;
 }
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
 .skill-name {
   font-size: 0.9rem;
   color: #333;
