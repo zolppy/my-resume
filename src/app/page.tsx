@@ -26,14 +26,14 @@ export default function Home() {
               href="https://www.linkedin.com/in/zolppy"
               className="text-blue-600 hover:underline"
             >
-              https://www.linkedin.com/in/zolppy
-            </a>
-            |
+              linkedin.com/in/zolppy
+            </a>{" "}
+            |{" "}
             <a
               href="https://github.com/zolppy"
               className="text-blue-600 hover:underline"
             >
-              https://github.com/zolppy
+              github.com/zolppy
             </a>
           </p>
         </header>
