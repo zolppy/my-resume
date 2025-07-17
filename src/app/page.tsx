@@ -1,8 +1,13 @@
 import { H2 } from "@/app/components/H2";
+import { Experience } from "@/app/components/Experience";
 import { Skill } from "@/app/components/Skill";
 import { Project } from "@/app/components/Project";
+import { experiences } from "@/utils/data/experiences";
 import { skills } from "@/utils/data/skills";
 import { projects } from "@/utils/data/projects";
+import { Experience as ExperienceType } from "@/utils/types/experience";
+import { Skill as SkillType } from "@/utils/types/skill";
+import { Project as ProjectType } from "@/utils/types/project";
 
 export default function Home() {
   return (
@@ -41,55 +46,17 @@ export default function Home() {
         </section>
         <section className="mb-6">
           <H2>Experiences</H2>
-          <div className="mb-4">
-            <h3 className="job-title">Desenvolvedor Frontend</h3>
-            <p className="company-name">Eruda</p>
-            <p className="date-range">Oct 2023 - Apr 2025</p>
-            <p className="list-item list-none">
-              Development and maintenance of modern, fluid, accessible, dynamic,
-              performant and responsive user interfaces, using cutting-edge
-              technologies and following high-fidelity models.
-            </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="job-title">
-              Artificial Intelligence and Machine Learning Intern
-            </h3>
-            <p className="company-name">Compass UOL</p>
-            <p className="date-range">Oct 2024 - Mar 2025</p>
-            <p className="list-item list-none">
-              Extensive learning path covering several theoretical topics
-              relevant to the area of Artificial Intelligence (e.g. Natural
-              Language Processing, Artificial Neural Networks, Deep Learning)
-              and AWS Cloud Computing, with real and practical projects.
-              Artificial Intelligence models have been implemented for various
-              purposes, such as chatbots and optical character recognition.
-            </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="job-title">Technical Support and Integration</h3>
-            <p className="company-name">Infotec Automação e Tecnologia</p>
-            <p className="date-range">Nov 2022 - Apr 2023</p>
-            <p className="list-item list-none">
-              Assembly, maintenance and configuration of computers and
-              peripherals and integration between systems, including network and
-              database configuration.
-            </p>
-          </div>
-          <div>
-            <h3 className="job-title">
-              Programa Institucional de Bolsas de Iniciação Científica
-            </h3>
-            <p className="company-name">
-              Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
-            </p>
-            <p className="date-range">Nov 2020 - May 2022</p>
-            <p className="list-item list-none">
-              Preparation of lesson plans, teaching materials, pedagogical
-              resources and other activities related to teaching, in addition to
-              teaching workshops in the area of Computer Science.
-            </p>
-          </div>
+          {experiences.map(
+            ({ id, title, company, date, description }: ExperienceType) => (
+              <Experience
+                key={id}
+                title={title}
+                company={company}
+                date={date}
+                description={description}
+              />
+            )
+          )}
         </section>
         <section className="mb-6">
           <H2>Academic Background</H2>
@@ -104,7 +71,7 @@ export default function Home() {
         <section className="mb-6">
           <H2>Skills</H2>
           <div className="space-y-3">
-            {skills.map(({ id, title, rate }) => (
+            {skills.map(({ id, title, rate }: SkillType) => (
               <Skill key={id} title={title} rate={rate} />
             ))}
           </div>
@@ -112,7 +79,7 @@ export default function Home() {
         <section className="mb-6">
           <H2>Projects</H2>
           <ul className="list-disc pl-5">
-            {projects.map(({ id, href, title }) => (
+            {projects.map(({ id, href, title }: ProjectType) => (
               <Project key={id} href={href} title={title} />
             ))}
           </ul>
@@ -120,9 +87,9 @@ export default function Home() {
         <section className="mb-6">
           <H2>Achievements</H2>
           <ul className="list-disc pl-5">
-            <li className="list-item">Gen Al Technical Certified</li>
-            <li className="list-item">Al-Assisted Certified Professional</li>
-            <li className="list-item">
+            <li className="mb-1">Gen Al Technical Certified</li>
+            <li className="mb-1">Al-Assisted Certified Professional</li>
+            <li className="mb-1">
               Agile-Certified Fast Inception with Al Cockpit
             </li>
           </ul>
@@ -130,7 +97,7 @@ export default function Home() {
         <section>
           <H2>Languages</H2>
           <ul className="list-disc pl-5">
-            <li className="list-item">English (advanced)</li>
+            <li className="mb-1">English (advanced)</li>
           </ul>
         </section>
       </div>
