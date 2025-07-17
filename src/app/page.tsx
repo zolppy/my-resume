@@ -3,14 +3,17 @@ import { Experience } from "@/app/components/Experience";
 import { Skill } from "@/app/components/Skill";
 import { Project } from "@/app/components/Project";
 import { Achievement } from "@/app/components/Achievement";
+import { Language } from "@/app/components/Language";
 import { experiences } from "@/utils/data/experiences";
 import { skills } from "@/utils/data/skills";
 import { projects } from "@/utils/data/projects";
 import { achievements } from "@/utils/data/achievements";
+import { languages } from "@/utils/data/languages";
 import { Experience as ExperienceType } from "@/utils/types/experience";
 import { Skill as SkillType } from "@/utils/types/skill";
 import { Project as ProjectType } from "@/utils/types/project";
 import { Achievement as AchievementType } from "@/utils/types/achievement";
+import { Language as LanguageType } from "@/utils/types/language";
 
 export default function Home() {
   return (
@@ -98,7 +101,9 @@ export default function Home() {
         <section>
           <H2>Languages</H2>
           <ul className="list-disc pl-5">
-            <li className="mb-1">English (advanced)</li>
+            {languages.map(({ id, title }: LanguageType) => (
+              <Language key={id} title={title} />
+            ))}
           </ul>
         </section>
       </div>
