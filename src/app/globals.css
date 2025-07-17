@@ -3,7 +3,3 @@
 * {
   @apply scroll-smooth;
 }
-
-body {
-  @apply bg-neutral-200;
-}

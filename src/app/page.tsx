@@ -60,36 +60,40 @@ export default function Home() {
       </section>
       <section>
         <H2>Experiences</H2>
-        {experiences.map(
-          ({ id, title, company, date, description }: ExperienceType) => (
-            <Experience
-              key={id}
-              title={title}
-              company={company}
-              date={date}
-              description={description}
-            />
-          )
-        )}
+        <List>
+          {experiences.map(
+            ({ id, title, company, date, description }: ExperienceType) => (
+              <Experience
+                key={id}
+                title={title}
+                company={company}
+                date={date}
+                description={description}
+              />
+            )
+          )}
+        </List>
       </section>
       <section>
         <H2>Academic Background</H2>
-        {educations.map(({ id, title, institution, date }: EducationType) => (
-          <Education
-            key={id}
-            title={title}
-            institution={institution}
-            date={date}
-          />
-        ))}
+        <List>
+          {educations.map(({ id, title, institution, date }: EducationType) => (
+            <Education
+              key={id}
+              title={title}
+              institution={institution}
+              date={date}
+            />
+          ))}
+        </List>
       </section>
       <section>
         <H2>Skills</H2>
-        <ul className="space-y-3">
+        <List className="space-y-1">
           {skills.map(({ id, title, rate }: SkillType) => (
             <Skill key={id} title={title} rate={rate} />
           ))}
-        </ul>
+        </List>
       </section>
       <section>
         <H2>Projects</H2>
