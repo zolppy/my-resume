@@ -1,6 +1,8 @@
 import { H2 } from "@/app/components/H2";
-import { Skill } from "./components/Skill";
+import { Skill } from "@/app/components/Skill";
+import { Project } from "@/app/components/Project";
 import { skills } from "@/utils/data/skills";
+import { projects } from "@/utils/data/projects";
 
 export default function Home() {
   return (
@@ -110,54 +112,9 @@ export default function Home() {
         <section className="mb-6">
           <H2>Projects</H2>
           <ul className="list-disc pl-5">
-            <li className="list-item">
-              <a
-                href="https://br-architects-zol.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://br-architects-zol.vercel.app
-              </a>
-            </li>
-            <li className="list-item">
-              <a
-                href="https://fashion-blog-zol.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://fashion-blog-zol.vercel.app
-              </a>
-            </li>
-            <li className="list-item">
-              <a
-                href="https://interior-design-zol.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://interior-design-zol.vercel.app
-              </a>
-            </li>
-            <li className="list-item">
-              <a
-                href="https://thin-crust-pizza.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://thin-crust-pizza.vercel.app
-              </a>
-            </li>
-            <li className="list-item">
-              <a
-                href="https://travel-agency-zol.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://travel-agency-zol.vercel.app
-              </a>
-            </li>
-            <li className="list-item">
-              <a
-                href="https://wizard-register.vercel.app"
-                className="text-blue-600 hover:underline"
-              >
-                https://wizard-register.vercel.app
-              </a>
-            </li>
+            {projects.map(({ id, href, title }) => (
+              <Project key={id} href={href} title={title} />
+            ))}
           </ul>
         </section>
         <section className="mb-6">

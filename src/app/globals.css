@@ -9,9 +9,6 @@
 .date-range {
   @apply text-sm text-gray-600 mb-1;
 }
-.list-item {
-  @apply mb-1;
-}
 .skill-name {
   font-size: 0.9rem;
   color: #333;

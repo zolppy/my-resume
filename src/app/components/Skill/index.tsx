@@ -1,9 +1,6 @@
-interface SkillProps {
-  title: string;
-  rate: number;
-}
+import { Skill as SkillType } from "@/utils/types/skill";
 
-export function Skill({ title, rate }: SkillProps) {
+export function Skill({ title, rate }: Omit<SkillType, "id">) {
   return (
     <li className="flex flex-col gap-y-1">
       <span className="skill-name">{title}</span>
