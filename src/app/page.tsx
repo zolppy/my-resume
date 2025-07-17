@@ -1,3 +1,5 @@
+import { H2 } from "@/app/components/H2";
+
 export default function Home() {
   return (
     <div className="font-sans bg-white text-black p-8">
@@ -27,14 +29,14 @@ export default function Home() {
           </p>
         </header>
         <section className="mb-6">
-          <h2 className="section-title">Objetive</h2>
+          <H2>Objetive</H2>
           <p>
             I seek to acquire even more experience and knowledge to become an
             even better and more versatile professional.
           </p>
         </section>
         <section className="mb-6">
-          <h2 className="section-title">Experiences</h2>
+          <H2>Experiences</H2>
           <div className="mb-4">
             <h3 className="job-title">Desenvolvedor Frontend</h3>
             <p className="company-name">Eruda</p>
@@ -86,7 +88,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-6">
-          <h2 className="section-title">Academic Background</h2>
+          <H2>Academic Background</H2>
           <div>
             <h3 className="job-title">Computer Science</h3>
             <p className="company-name">
@@ -96,7 +98,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-6">
-          <h2 className="section-title">Skills</h2>
+          <H2>Skills</H2>
           <div className="space-y-3">
             <div className="skill-item">
               <span className="skill-name">Artificial Neural Networks</span>
@@ -254,7 +256,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-6">
-          <h2 className="section-title">Projects</h2>
+          <H2>Projects</H2>
           <ul className="list-disc pl-5">
             <li className="list-item">
               <a
@@ -307,7 +309,7 @@ export default function Home() {
           </ul>
         </section>
         <section className="mb-6">
-          <h2 className="section-title">Achievements</h2>
+          <H2>Achievements</H2>
           <ul className="list-disc pl-5">
             <li className="list-item">Gen Al Technical Certified</li>
             <li className="list-item">Al-Assisted Certified Professional</li>
@@ -317,7 +319,7 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h2 className="section-title">Languages</h2>
+          <H2>Languages</H2>
           <ul className="list-disc pl-5">
             <li className="list-item">English (advanced)</li>
           </ul>

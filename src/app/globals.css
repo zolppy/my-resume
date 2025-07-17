@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-.section-title {
-  @apply text-xl font-bold border-b border-black pb-1 mb-2;
-}
 .job-title {
   @apply font-semibold text-lg;
 }
