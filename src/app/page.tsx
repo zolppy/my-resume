@@ -1,15 +1,18 @@
 import { H2 } from "@/app/components/H2";
 import { Experience } from "@/app/components/Experience";
+import { Education } from "@/app/components/Education";
 import { Skill } from "@/app/components/Skill";
 import { Project } from "@/app/components/Project";
 import { Achievement } from "@/app/components/Achievement";
 import { Language } from "@/app/components/Language";
 import { experiences } from "@/utils/data/experiences";
+import { educations } from "@/utils/data/educations";
 import { skills } from "@/utils/data/skills";
 import { projects } from "@/utils/data/projects";
 import { achievements } from "@/utils/data/achievements";
 import { languages } from "@/utils/data/languages";
 import { Experience as ExperienceType } from "@/utils/types/experience";
+import { Education as EducationType } from "@/utils/types/education";
 import { Skill as SkillType } from "@/utils/types/skill";
 import { Project as ProjectType } from "@/utils/types/project";
 import { Achievement as AchievementType } from "@/utils/types/achievement";
@@ -66,13 +69,14 @@ export default function Home() {
         </section>
         <section className="mb-6">
           <H2>Academic Background</H2>
-          <div>
-            <h3 className="job-title">Computer Science</h3>
-            <p className="company-name">
-              Instituto Federal de Educação, Ciência e Tecnologia da Bahia
-            </p>
-            <p className="date-range">2019 - Now</p>
-          </div>
+          {educations.map(({ id, title, institution, date }: EducationType) => (
+            <Education
+              key={id}
+              title={title}
+              institution={institution}
+              date={date}
+            />
+          ))}
         </section>
         <section className="mb-6">
           <H2>Skills</H2>
